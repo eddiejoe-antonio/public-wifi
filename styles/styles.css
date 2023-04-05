@@ -12,11 +12,11 @@ body {
   /* background-image: linear-gradient(#333, lightblue); */
   /* color: white; */
   /* background-image: linear-gradient(#a1bff0, white); */
-  background-image: linear-gradient(30deg, white, yellowgreen);
-  padding: 7.5vw;
+  background-image: linear-gradient(yellowgreen, white);
+  margin: 7.5vw;
   font-size: 1.25em;
   line-height: 1.5em;
-  overflow:scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 /** TEXT Styles **/
@@ -31,10 +31,12 @@ p {
   position: relative;
   z-index: 300;
   left: 15vw;
-  max-width: 50vw;
+  max-width: 60vw;
 }
 
 img {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
   /* left: 65vw; */
   z-index: 100;
   /* float: right; */
