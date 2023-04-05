@@ -127,12 +127,12 @@ h2 {
 
 #text1,
 #text2 {
-font-size: 10rem;
-position: absolute;
-font-family: "vcr";
-width: 100%;
-display:inline;
-user-select: none;
+  font-size: 10rem;
+  position: absolute;
+  font-family: "vcr";
+  width: 100%;
+  display:inline;
+  user-select: none;
 }
 
 /** MOBILE Content Rules **/
@@ -167,6 +167,10 @@ user-select: none;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
     transform: rotateY(30deg);
+  }
+
+  #container {
+    margin-bottom: -5vh;
   }
 
   #text1,
