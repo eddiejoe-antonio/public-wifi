@@ -5,8 +5,222 @@
 }
 
 
-
 /** OVERALL Styles **/
+
+/* * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 23.33vw;
+  padding: 3vw;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  /* background-image: linear-gradient(#333, lightblue); */
+  /* color: white; */
+  background-image: linear-gradient(white, yellowgreen);
+  padding: 7.5vw;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+/** TEXT Styles **/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  position: relative;
+  z-index: 300;
+  max-width: 35vw;
+}
+
+a:hover {
+  background: yellow;
+  text-decoration: none;
+  transition: .5s;
+}
+
+img {
+  left: 65vw;
+  z-index: 100;
+  float: right;
+  width: 35vw;
+  filter: brightness(100%);
+}
+
+a:visited {
+    text-decoration: none;
+    color:initial;
+}
+
+h1 {
+    overflow-wrap: break-word;
+    font-family: "vcr";
+    font-size: 10rem;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    z-index: 100;
+}
+
+h2 {
+  font-weight: bold;
+  position: relative;
+}
+
+.site__description {
+  z-index: 100;
+}
+
+.link__brooklyn {
+  position:relative;
+  text-decoration: none;
+  font-size: 8vh;
+  color: white;
+  left: 2vw;
+  font-weight: bold;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+.link__manhattan {
+  position:relative;
+  text-decoration: none;
+  left: 2vw;
+  font-size: 8vh;
+  color: black;
+  font-weight: bold;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/** ANIMATION Headers **/
+
+#container {
+  margin: auto;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+font-size: 10rem;
+position: absolute;
+font-family: "vcr";
+width: 100%;
+display:inline;
+user-select: none;
+}
+
+/** MOBILE Content Rules **/
+@media (max-width: 1080px) {
+  body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-image: linear-gradient(white, yellowgreen);
+    color: black;
+    padding: 5vw;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  p {
+    max-width: 80vw;
+  }
+
+  img {
+    display: block;   
+    margin-bottom: 5vh;
+    z-index: 100;
+    float:none;
+    width: 80vw;
+    filter: brightness(100%);
+  }
+
+  h1 {
+    overflow-wrap: break-word;
+    line-height: .75em;
+    font-family: "vcr";
+    font-size: 5em;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    transform: rotateY(30deg);
+  }
+
+  #text1,
+  #text2 {
+    font-size: 3.25em;
+    position: absolute;
+    font-family: "vcr";
+    width: 50%;
+    display:inline;
+    user-select: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** STYLES: Popup **/
+
+.pros__cons {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
 body.good {
   font-family: 'Hanken Grotesk', sans-serif;
   padding: 5vh;
@@ -19,385 +233,302 @@ body.good {
 }
 
 body.bad {
-    font-family: 'Hanken Grotesk', sans-serif;
-    padding: 5vh;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    background-image: url("../data/b.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-  }
-
-  body.home__page {
-    font-family: 'Hanken Grotesk', sans-serif;
-    background-image: linear-gradient(white, yellowgreen);
-    color: black;
-    padding: 5vh;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    /* background-image: linear-gradient(yellow, white); */
-}
-
-/** TEXT Styles **/
-
-a {
-    text-decoration: none;
-}
-
-p {
-  position: relative;
-  z-index: 300;
-  max-width: 40vw;
-}
-
-a:hover {
-  background: yellow;
-  text-decoration: none;
-  transition: .5s;
-}
-
-img {
-  padding: .5%;
-  z-index: 100;
-  float: right;
-  width: 40vw;
-  filter: brightness(100%);
-}
-
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-.pros__cons {
-    position: relative;
-    float: left;
-    width: 50%;
-}
-
-h1 {
-    font-family: "vcr";
-    left: 50%;
-    font-size: 15vw;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    z-index: 100;
-}
-
-h2 {
-    font-weight: bold;
-    position: relative;
-}
-
-.site__description {
-    z-index: 100;
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 5vh;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  background-image: url("../data/b.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
 }
 
 .link__switch__bad {
-    position:absolute;
-    left: 80%;
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
-    -webkit-animation: fadeIn 5s;
-    animation: fadeIn 5s;
+  position:absolute;
+  left: 80%;
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
 }
 
 .link__switch__good {
-    position:absolute;
-    left: 90%;
-    text-decoration: none;
-    color: lawngreen;
-    font-weight: bold;
-    -webkit-animation: fadeIn 5s;
-    animation: fadeIn 5s;
+  position:absolute;
+  left: 90%;
+  text-decoration: none;
+  color: lawngreen;
+  font-weight: bold;
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
 }
 
 .link__home__bad {
-    position:relative;
-    text-decoration: none;
-    font-size: 8vh;
-    color: white;
-    left: 2vw;
-    font-weight: bold;
-    -webkit-animation: fadeIn 2s;
-    animation: fadeIn 2s;
+  position:relative;
+  text-decoration: none;
+  font-size: 8vh;
+  color: white;
+  left: 2vw;
+  font-weight: bold;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 .link__home__good {
-    position:relative;
-    text-decoration: none;
-    left: 2vw;
-    font-size: 8vh;
-    color: black;
-    font-weight: bold;
-    -webkit-animation: fadeIn 2s;
-    animation: fadeIn 2s;
+  position:relative;
+  text-decoration: none;
+  left: 2vw;
+  font-size: 8vh;
+  color: black;
+  font-weight: bold;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
-
-
 /** POPUP Styles + Functionality **/
 .popup__a {
-    position: absolute;
-    display: inline-block;
-    text-transform: uppercase;
-    left: 57.5%;
-    top: 49.5%;
-    cursor: pointer;
-    color: grey;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup__a .popuptext__a {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 1em;
-    line-height: 1.25em;
-    width: 20vw;
-    padding: 1vw;
-    background-color: white;
-    color: black;
-    padding: 1vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup__a .popuptext__a::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 37%;
-    margin-left: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup__a .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 57.5%;
+  top: 49.5%;
+  cursor: pointer;
+  color: grey;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
+/* The actual popup (appears on top) */
+.popup__a .popuptext__a {
+  text-transform: none;
+  visibility: hidden;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 20vw;
+  padding: 1vw;
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
 
-
-
-
-  .popup__b {
-    position: absolute;
-    display: inline-block;
-    text-transform: uppercase;
-    left: 23%;
-    top: 55%;
-    cursor: pointer;
-    color: grey;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
+/* Popup arrow */
+.popup__a .popuptext__a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 37%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
   
-  /* The actual popup (appears on top) */
-  .popup__b .popuptext__b {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 1em;
-    line-height: 1.25em;
-    width: 20vw;
-    background-color: white;
-    color: black;
-    padding: 1vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup__b .popuptext__b::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 32%;
-    margin-left: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup__b .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup__a .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.popup__b {
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 23%;
+  top: 55%;
+  cursor: pointer;
+  color: grey;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* The actual popup (appears on top) */
+.popup__b .popuptext__b {
+  text-transform: none;
+  visibility: hidden;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup__b .popuptext__b::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup__b .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
   
 
 
 /* IMAGE 02 */
-  .popup__c {
-    position: absolute;
-    display: inline-block;
-    text-transform: uppercase;
-    left: 49.8%;
-    top: 59%;
-    cursor: pointer;
-    color: grey;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup__c .popuptext__c {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 1em;
-    line-height: 1.25em;
-    width: 20vw;
-    background-color: white;
-    color: black;
-    padding: 1vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup__c .popuptext__c::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 32%;
-    margin-left: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup__c .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
+.popup__c {
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 49.8%;
+  top: 59%;
+  cursor: pointer;
+  color: grey;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* The actual popup (appears on top) */
+.popup__c .popuptext__c {
+  text-transform: none;
+  visibility: hidden;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup__c .popuptext__c::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup__c .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
 
 /* IMAGE 03 */
-  .popup__d {
-    position: absolute;
-    display: inline-block;
-    text-transform: uppercase;
-    left: 72%;
-    top: 49%;
-    cursor: pointer;
-    color: grey;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup__d .popuptext__d {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 1em;
-    line-height: 1.25em;
-    width: 20vw;
-    background-color: white;
-    color: black;
-    padding: 1vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup__d .popuptext__d::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 32%;
-    margin-left: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup__d .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
+.popup__d {
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 72%;
+  top: 49%;
+  cursor: pointer;
+  color: grey;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* The actual popup (appears on top) */
+.popup__d .popuptext__d {
+  text-transform: none;
+  visibility: hidden;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup__d .popuptext__d::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup__d .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
 
 
 /* IMAGE 04 */
 .popup__e {
-    position: absolute;
-    display: inline-block;
-    text-transform: uppercase;
-    left: 76%;
-    top: 57%;
-    cursor: pointer;
-    color: grey;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup__e .popuptext__e {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 1em;
-    line-height: 1.25em;
-    width: 20vw;
-    background-color: white;
-    color: black;
-    padding: 1vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup__e .popuptext__e::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 32%;
-    margin-left: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup__e .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 76%;
+  top: 57%;
+  cursor: pointer;
+  color: grey;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
+/* The actual popup (appears on top) */
+.popup__e .popuptext__e {
+  text-transform: none;
+  visibility: hidden;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
 
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+/* Popup arrow */
+.popup__e .popuptext__e::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup__e .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+

@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
     <script type="text/javascript" src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Greenwood Ethnographies</title>
 </head>
 <body class="home__page">
-    <a href="https://storytelling-test.vercel.app/"><h1>linkNYC</h1></a>
-    <br><br><br>
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
 
+    <script type="text/javascript" src="scripts/headerAnimation.js"></script>
+
+
+
+    <br><br><br>
+    <p><a href="https://eddiejoeantonio.com">Eddie Joe Antonio</a> | <em>April 2023</em></p>
     <img class="opening__shot" src="https://theintercept.imgix.net/wp-uploads/sites/1/2018/08/LinkNYC-feature-2.8mb-1535131232.gif"> 
     <p>
         On a warm day in Brooklyn, a small community will often gather on Fourth Avenue and 24th Street. The size of the group changes, but you can regularly find at least three people sitting in the short overhang of a shuttered deli entrance. People play music, dominoes, and Instagram Reels. A regular visitor named José explained to me the merits of spending “no more than an hour on the same street everyday to be sure you know what’s going on”. Sometimes, everyone locates around a short turn of the block, dodging the sun in the heat and seeking it out in early spring. Watching videos throughout the day, sharing social media posts, or otherwise simply socializing, José and others hang out as the busy avenue rumbles past. 
+        <br><br>    
+        They do this in close proximity to a LinkNYC kiosk. The kiosks, housed in sleek technological boxes, provide free WiFi, phone-calling, and other modern services at no cost. Rolled out in 2015, the digital nodes replaced the city’s aging public payphone system with a remarkable set of communication tools and a new approach to ‘public’ infrastructure. At their best, the LinkNYC kiosks are one component of a large public WiFi system that addresses aspects of the digital divide. 
         <br><br>
-        
-	They do this in close proximity to a LinkNYC kiosk. The kiosks, housed in sleek technological boxes, provide free WiFi, phone-calling, and other modern services at no cost. Rolled out in 2015, the digital nodes replaced the city’s aging public payphone system with a remarkable set of communication tools and a new approach to ‘public’ infrastructure. At their best, the LinkNYC kiosks are one component of a large public WiFi system that addresses aspects of the digital divide. 
-    <br><br>
-At their worst, the LinkNYC kiosks are an unequal product in our city that collect significant amounts of data about our whereabouts and online activities in exchange for access to the network. The vast majority of LinkNYCs are located in busy districts of the urban core, where most residents already have access to high speed broadband at home and at work and have relatively high incomes. Neighborhoods such as Mott Haven and Parkchester in the Bronx or Borough Park and Brownsville in Brooklyn—low-income areas, home to marginalized communities that telecom companies have refused to serve with broadband infrastructure at reasonable rates—are entirely left out of the LinkNYC program at the time of this writing. 
-<br><br>
-The terms-of-use also raise equity concerns, in order to use the kiosks or their WiFi users must agree to having their device location, URL clickstream, and MAC plus IP addresses recorded by LinkNYC. Intersection, the company that owns and operates the kiosks, stores all this data in anonymized formats before using it to sell advertisements on the built-in kiosk display screens. Surprised? You shouldn’t be—Intersection’s parent company, Alphabet, has been excelling at this model of targeted advertising for over a decade now with its most famous product: GoogleAds. In addition to digital surveillance the kiosks are equipped with two security cameras whose footage Intersection regularly shared with law enforcement. 
-<br><br>
-</p>
-<h1>streetside</h1>
-<br><br>
-<img src="/data/greenwood2.png">
-<p>
-Between the data collection measures, the ability to survey the street, and the business model based on advertisement revenue, the kiosks represent an entirely new way of providing services that could be categorized as a surveillant capitalist model. Imagine a public school that collected information on everything students read, learned, or were interested in (anonymized, of course!) and then used that information to sell ads on the windows in order to fund their education. Sounds a little funky, no?
-<br><br>
-~
-<br><br>
-	Over the past six months I’ve observed four specific LinkNYC kiosks, documenting the activities and opinions of their users, and recording the streetlife around these locations. I spent time with the small community at Fourth Avenue and 24th Street and frequented a busy site on Lawrence Street in Fulton Mall. I jammed my way into Times Square, documenting the activity at a rambunctious kiosk on W 45th Street. And I’ve observed a LinkNYC on W 123rd Street in Harlem, a shining metallic box that is barely used. My process has involved arriving at a site and investing fifteen minutes in observing, discussing, and debating the kiosks with anyone willing to talk to me. I have done this with a sense of urgency and, bizarrely, even a feeling of anxiety. It feels like the moment to act is now, but it also feels unclear what the acting is on. What feels clearest is the need to share and discuss where public WiFi is going, and why, before we have closed the door on how it will be deployed.
-    <br><br>
- I am convinced that what we have today is an example of New Yorkers making lemonade out of lemons. Across the city, a system that raises questions around privacy, surveillance, and equity is being used in spectacular spatial, social, and entrepreneurial ways. From the perspective of an urban planner, the activities of LinkNYC users have suggested deeply impactful spatial design interventions that could affect a totally new and unique node in urban life. What follows is a spatial walkthrough of each of my four sites accompanied by a series of some of the design interventions I am proposing based on my research. This is my highly opinionated, minorly quantitative, and deeply qualitative set of guidelines for how we can facilitate this urban design challenge–I look forward to hearing yours. 
-
+        At their worst, the LinkNYC kiosks are an unequal product in our city that collect significant amounts of data about our whereabouts and online activities in exchange for access to the network. The vast majority of LinkNYCs are located in busy districts of the urban core, where most residents already have access to high speed broadband at home and at work and have relatively high incomes. Neighborhoods such as Mott Haven and Parkchester in the Bronx or Borough Park and Brownsville in Brooklyn—low-income areas, home to marginalized communities that telecom companies have refused to serve with broadband infrastructure at reasonable rates—are entirely left out of the LinkNYC program at the time of this writing. 
+        <br><br>
+        The terms-of-use also raise equity concerns, in order to use the kiosks or their WiFi users must agree to having their device location, URL clickstream, and MAC plus IP addresses recorded by LinkNYC. Intersection, the company that owns and operates the kiosks, stores all this data in anonymized formats before using it to sell advertisements on the built-in kiosk display screens. Surprised? You shouldn’t be—Intersection’s parent company, Alphabet, has been excelling at this model of targeted advertising for over a decade now with its most famous product: GoogleAds. In addition to digital surveillance the kiosks are equipped with two security cameras whose footage Intersection regularly shared with law enforcement. 
+        <br><br>
     </p>
-    <h1>publicwifi</h1>
+    <h1>streetside</h1>
+    <br><br>
+    <img src="/data/greenwood2.png">
+    <p>
+        Between the data collection measures, the ability to survey the street, and the business model based on advertisement revenue, the kiosks represent an entirely new way of providing services that could be categorized as a surveillant capitalist model. Imagine a public school that collected information on everything students read, learned, or were interested in (anonymized, of course!) and then used that information to sell ads on the windows in order to fund their education. Sounds a little funky, no?
+        <br><br>
+        ~
+        <br><br>
+        Over the past six months I’ve observed four specific LinkNYC kiosks, documenting the activities and opinions of their users, and recording the streetlife around these locations. I spent time with the small community at Fourth Avenue and 24th Street and frequented a busy site on Lawrence Street in Fulton Mall. I jammed my way into Times Square, documenting the activity at a rambunctious kiosk on W 45th Street. And I’ve observed a LinkNYC on W 123rd Street in Harlem, a shining metallic box that is barely used. My process has involved arriving at a site and investing fifteen minutes in observing, discussing, and debating the kiosks with anyone willing to talk to me. I have done this with a sense of urgency and, bizarrely, even a feeling of anxiety. It feels like the moment to act is now, but it also feels unclear what the acting is on. What feels clearest is the need to share and discuss where public WiFi is going, and why, before we have closed the door on how it will be deployed.
+        <br><br>
+        I am convinced that what we have today is an example of New Yorkers making lemonade out of lemons. Across the city, a system that raises questions around privacy, surveillance, and equity is being used in spectacular spatial, social, and entrepreneurial ways. From the perspective of an urban planner, the activities of LinkNYC users have suggested deeply impactful spatial design interventions that could affect a totally new and unique node in urban life. What follows is a spatial walkthrough of each of my four sites accompanied by a series of some of the design interventions I am proposing based on my research. This is my highly opinionated, minorly quantitative, and deeply qualitative set of guidelines for how we can facilitate this urban design challenge–I look forward to hearing yours. 
+    </p>
+    <h1>public WiFi</h1>
     <br><br>
     <br><br>
-    <a class="link__home__good" href="https://storytelling-test.vercel.app/">Greenwood</a>
-    <a class="link__home__bad" href="shortcomings.html">Downtown Brooklyn</a>
-    <a class="link__home__good" href="https://storytelling-test.vercel.app/">Times Square</a>
-    <a class="link__home__bad" href="shortcomings.html">Harlem</a>
+    <a class="link__brooklyn" href="https://storytelling-test.vercel.app/">Greenwood</a>
+    <a class="link__brooklyn" href="shortcomings.html">Downtown Brooklyn</a>
+    <a class="link__manhattan" href="https://storytelling-test.vercel.app/">Times Square</a>
+    <a class="link__manhattan" href="shortcomings.html">Harlem</a>
     <br><br><br>
     <br><br><br>
     <br><hr><br>
