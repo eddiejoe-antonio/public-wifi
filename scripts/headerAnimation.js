@@ -5,15 +5,14 @@ const elts = {
 console.log(elts.text1);
 
 const texts = [
-    "linkNYC",
     "publicWiFi",
-    "linkNYC",
-    "publicWiFi"
-
+    "by linkNYC",
+    "publicWiFi",
+    "by linkNYC"
 ];
 
-const morphTime = 1.5;
-const cooldownTime = 2;
+const morphTime = 1.25;
+const cooldownTime = 1.25;
 
 let textIndex = texts.length - 1;
 let time = new Date();

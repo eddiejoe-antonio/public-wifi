@@ -7,30 +7,16 @@
 
 /** OVERALL Styles **/
 
-/* * {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 23.33vw;
-  padding: 3vw;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   /* background-image: linear-gradient(#333, lightblue); */
   /* color: white; */
-  background-image: linear-gradient(white, yellowgreen);
+  /* background-image: linear-gradient(#a1bff0, white); */
+  background-image: linear-gradient(30deg, white, yellowgreen);
   padding: 7.5vw;
   font-size: 1.25em;
   line-height: 1.5em;
+  overflow:scroll;
 }
 
 /** TEXT Styles **/
@@ -38,45 +24,67 @@ body {
 a {
   color: white;
   text-decoration: none;
+  transition: .5s;
 }
 
 p {
   position: relative;
   z-index: 300;
-  max-width: 35vw;
-}
-
-a:hover {
-  background: yellow;
-  text-decoration: none;
-  transition: .5s;
+  left: 15vw;
+  max-width: 50vw;
 }
 
 img {
-  left: 65vw;
+  /* left: 65vw; */
   z-index: 100;
-  float: right;
-  width: 35vw;
-  filter: brightness(100%);
+  /* float: right; */
+  /* width: 35vw; */
+  width: 85vw;
+  /* filter: brightness(100%); */
+  opacity: 1;
+  transition: .5s;
+}
+
+img:hover {
+  opacity: 0.75;
+  transition: .5s;
 }
 
 a:visited {
     text-decoration: none;
     color:initial;
 }
+a:hover {
+  color: white;
+  transition: .5s;
+}
 
 h1 {
-    overflow-wrap: break-word;
-    font-family: "vcr";
-    font-size: 10rem;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    z-index: 100;
+  color: #111;
+  margin-bottom: 10vw;
+  position:relative;
+  overflow-wrap: break-word;
+  line-height: 1em;
+  /* font-family: "vcr"; */
+  left: 25vw;
+  font-size: 6vw;
+  transition: .5s;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+h1:hover {
+  color: #666;
+  transition: .5s;
 }
 
 h2 {
   font-weight: bold;
   position: relative;
+}
+
+hr {
+  border: solid white;
 }
 
 .site__description {
@@ -104,6 +112,11 @@ h2 {
   animation: fadeIn 2s;
 }
 
+.takeaways {
+  line-height: 10vh; 
+  font-size: 5vh;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
@@ -127,7 +140,8 @@ h2 {
 
 #text1,
 #text2 {
-  font-size: 10rem;
+  color: white;
+  font-size: 14vw;
   position: absolute;
   font-family: "vcr";
   width: 100%;
@@ -139,7 +153,8 @@ h2 {
 @media (max-width: 1080px) {
   body {
     font-family: 'Hanken Grotesk', sans-serif;
-    background-image: linear-gradient(white, yellowgreen);
+    /* background-image: linear-gradient(white, yellowgreen); */
+    background-image: linear-gradient(#a1bff0, white);
     color: black;
     padding: 5vw;
     font-size: 1em;
@@ -147,7 +162,8 @@ h2 {
   }
 
   p {
-    max-width: 80vw;
+    max-width: 90vw;
+    left: 0vw;
   }
 
   img {
@@ -155,14 +171,14 @@ h2 {
     margin-bottom: 5vh;
     z-index: 100;
     float:none;
-    width: 80vw;
+    width: 95vw;
     filter: brightness(100%);
   }
 
   h1 {
     overflow-wrap: break-word;
+    font-size: .25vh;
     line-height: .75em;
-    font-family: "vcr";
     font-size: 5em;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
@@ -170,7 +186,7 @@ h2 {
   }
 
   #container {
-    margin-bottom: -5vh;
+    margin-bottom: -10vh;
   }
 
   #text1,
@@ -178,7 +194,7 @@ h2 {
     font-size: 3.25em;
     position: absolute;
     font-family: "vcr";
-    width: 50%;
+    width: 100%;
     display:inline;
     user-select: none;
   }
