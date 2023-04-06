@@ -115,6 +115,9 @@ hr {
 }
 
 .takeaways {
+  margin-left: -7.5vw;
+  background-color: #dedede;
+  border: 5vw solid #dedede;
   line-height: 10vh; 
   font-size: 5vh;
 }
@@ -161,6 +164,7 @@ hr {
     padding: 5vw;
     font-size: 1em;
     line-height: 1.5em;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
   p {
@@ -169,22 +173,50 @@ hr {
   }
 
   img {
-    display: block;   
     margin-bottom: 5vh;
-    z-index: 100;
     float:none;
-    width: 95vw;
+    width: 85vw;
     filter: brightness(100%);
   }
 
   h1 {
+    margin-bottom: 10vh;
     overflow-wrap: break-word;
-    font-size: .25vh;
     line-height: .75em;
-    font-size: 5em;
+    font-size: 10vw;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
     transform: rotateY(30deg);
+    z-index: 300;
+    color: white;
+  }
+
+  .takeaways {
+    background-color: #dedede;
+    border: 5vw solid #dedede;
+    line-height: 5vh; 
+    font-size: 5vw;
+  }
+
+  .link__brooklyn {
+    text-decoration: none;
+    line-height: 10vh;
+    font-size: 10vh;
+    color: white;
+    left: 2vw;
+    font-weight: bold;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+  }
+  .link__manhattan {
+    text-decoration: none;
+    line-height: 10vh;
+    left: 2vw;
+    font-size: 10vh;
+    color: black;
+    font-weight: bold;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
   }
 
   #container {
@@ -201,6 +233,17 @@ hr {
     user-select: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
