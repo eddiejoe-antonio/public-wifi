@@ -158,8 +158,8 @@ hr {
 @media (max-width: 1080px) {
   body {
     font-family: 'Hanken Grotesk', sans-serif;
-    /* background-image: linear-gradient(white, yellowgreen); */
-    background-image: linear-gradient(#a1bff0, white);
+    background-image: linear-gradient(yellowgreen, white);
+    /* background-image: linear-gradient(#a1bff0, white); */
     color: black;
     padding: 5vw;
     font-size: 1em;
@@ -175,7 +175,7 @@ hr {
   img {
     margin-bottom: 5vh;
     float:none;
-    width: 85vw;
+    width: 80vw;
     filter: brightness(100%);
   }
 
@@ -192,6 +192,7 @@ hr {
   }
 
   .takeaways {
+    margin-left: 0vw;
     background-color: #dedede;
     border: 5vw solid #dedede;
     line-height: 5vh; 
