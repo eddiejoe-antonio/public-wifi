@@ -96,7 +96,7 @@ hr {
 .link__brooklyn {
   position:relative;
   text-decoration: none;
-  font-size: 8vh;
+  font-size: 6vh;
   color: white;
   left: 2vw;
   font-weight: bold;
@@ -107,7 +107,7 @@ hr {
   position:relative;
   text-decoration: none;
   left: 2vw;
-  font-size: 8vh;
+  font-size: 6vh;
   color: black;
   font-weight: bold;
   -webkit-animation: fadeIn 2s;
