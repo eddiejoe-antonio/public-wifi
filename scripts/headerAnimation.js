@@ -2,7 +2,6 @@ const elts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
 };
-console.log(elts.text1);
 
 const texts = [
     "publicWiFi",
@@ -11,8 +10,8 @@ const texts = [
     "by linkNYC"
 ];
 
-const morphTime = 1.25;
-const cooldownTime = 1.25;
+const morphTime = 1.5;
+const cooldownTime = 1.5;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -80,3 +79,19 @@ function animate() {
 }
 
 animate();
+
+
+// NAVBAR Visibility On Scroll
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  console.log(currentScrollPos);
+  if (currentScrollPos > window.innerHeight) {
+    document.getElementById("navbar").style.opacity = "1";
+  } else {
+    document.getElementById("navbar").style.opacity = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}
