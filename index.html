@@ -9,8 +9,27 @@
     <title>Public WiFi | LinkNYC in 2023</title>
   </head>
   <body class="home__page">
+    <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
+    </svg>
     <div class="opening__shot">
-      <img src="data/opening_shot_bw.jpg" />
+      <img src="data/opening_shot_long.png" />
     </div>
     <nav id="navbar">
       <!-- LOGO -->
@@ -58,30 +77,9 @@
       </ul>
     </nav>
 
-    <div id="container">
-      <span id="text1"></span>
-      <span id="text2"></span>
-    </div>
-
-    <svg id="filters">
-      <defs>
-        <filter id="threshold">
-          <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="1 0 0 0 0
-                                        0 1 0 0 0
-                                        0 0 1 0 0
-                                        0 0 0 255 -140"
-          />
-        </filter>
-      </defs>
-    </svg>
-
     <script type="text/javascript" src="scripts/headerAnimation.js"></script>
     <p class="captions__text">
-      A series of virtual walkthroughs argue for urban design interventions
-      around New York streets. Scroll to read more.
+      Scroll down to read about a series of urban design interventions. Click the images to enter immersive scenes depicting specific LinkNYC sites. 
     </p>
     <br />
     <p>

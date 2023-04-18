@@ -93,11 +93,11 @@ img:hover {
   left: 0;
   top: 0;
   margin-left: -20vw;
-  margin-top: -25vh;
-  margin-bottom: 15vw;
+  margin-bottom: 0vw;
+  margin-top: -15vw;
   width: 120vw;
-  height: 100vh;
-  object-fit: contain;
+  height: 85vh;
+  object-fit: cover;
   -webkit-animation: fadeIn 2s;
   animation: fadeIn 2s;
 }
@@ -191,24 +191,21 @@ hr {
 
 #container {
   display: block;
-  margin-left: 10vw;
+  margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: -80vh;
-  margin-bottom: 30vh;
+  margin-bottom: 0vh;
   filter: url(#threshold) blur(0.6px);
 }
 
 #text1,
 #text2 {
-  text-transform: uppercase;
-  text-decoration:overline;
-  color: red;
+  /* text-transform: uppercase; */
+  color: #444;
   /* -webkit-text-stroke: 5px #dedede; */
-  font-size: 10vw;
-  position: absolute;
+  font-size: 12vw;
+  position: fixed;
   font-family: "vcr";
-  width: 100%;
   display:inline;
   user-select: none;
 }
@@ -231,7 +228,7 @@ hr {
 }
   
 .nav-links a {
-    /* color: yellowgreen; */
+    color: black;
 }
   
   /* LOGO */
