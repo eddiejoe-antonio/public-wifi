@@ -10,8 +10,8 @@ const texts = [
     "by linkNYC"
 ];
 
-const morphTime = 1.5;
-const cooldownTime = 1.5;
+const morphTime = 2;
+const cooldownTime = 2;
 
 let textIndex = texts.length - 1;
 let time = new Date();

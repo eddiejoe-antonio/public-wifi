@@ -98,6 +98,8 @@ img:hover {
   width: 120vw;
   height: 100vh;
   object-fit: contain;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .opening__shot img:hover{
@@ -200,11 +202,12 @@ hr {
 #text1,
 #text2 {
   text-transform: uppercase;
-  color: black;
-  -webkit-text-stroke: 5px #dedede;
+  text-decoration:overline;
+  color: red;
+  /* -webkit-text-stroke: 5px #dedede; */
   font-size: 10vw;
   position: absolute;
-  /* font-family: "vcr"; */
+  font-family: "vcr";
   width: 100%;
   display:inline;
   user-select: none;
