@@ -93,17 +93,18 @@ img:hover {
   left: 0;
   top: 0;
   margin-left: -20vw;
-  margin-bottom: 0vw;
-  margin-top: -15vw;
+  margin-bottom: -10vw;
+  margin-top: -10vw;
   width: 120vw;
-  height: 85vh;
+  height: 80vh;
   object-fit: cover;
-  -webkit-animation: fadeIn 2s;
-  animation: fadeIn 2s;
+  -webkit-animation: fadeInCover 7.5s;
+  animation: fadeInCover 7.5s;
+  opacity: 0.75;
 }
 
 .opening__shot img:hover{
-  opacity: 1;
+  opacity: 0.75;
 }
 
 a:visited {
@@ -187,25 +188,36 @@ hr {
   to {opacity:1 ;}
 }
 
+@-webkit-keyframes fadeInCover {
+  from {opacity: 0;}
+  to {opacity: 0.75;}
+}
+
+@keyframes fadeInCover {
+  from {opacity: 0;}
+  to {opacity:0.75 ;}
+}
+
 /** ANIMATION Headers **/
 
 #container {
   display: block;
-  margin-left: auto;
+  position: absolute;
+  margin-left: 32vw;
   margin-right: auto;
-  width: 100%;
-  margin-bottom: 0vh;
+  width: 75%;
+  margin-top: 0vh;
   filter: url(#threshold) blur(0.6px);
 }
 
 #text1,
 #text2 {
   /* text-transform: uppercase; */
-  color: #444;
-  /* -webkit-text-stroke: 5px #dedede; */
-  font-size: 12vw;
+  color: #222;
+  /* -webkit-text-stroke: 1px #fff; */
+  font-size: 11vw;
   position: fixed;
-  font-family: "vcr";
+  /* font-family: "vcr"; */
   display:inline;
   user-select: none;
 }
