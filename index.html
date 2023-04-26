@@ -9,6 +9,27 @@
     <title>Public WiFi | LinkNYC in 2023</title>
   </head>
   <body class="home__page">
+    <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
+    </svg>
+
+
     <div class="opening__shot">
       <img src="data/opening_shot_long.png" />
     </div>
@@ -57,26 +78,6 @@
         </div>
       </ul>
     </nav>
-
-    <div id="container">
-      <span id="text1"></span>
-      <span id="text2"></span>
-    </div>
-
-    <svg id="filters">
-      <defs>
-        <filter id="threshold">
-          <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="1 0 0 0 0
-                                        0 1 0 0 0
-                                        0 0 1 0 0
-                                        0 0 0 255 -140"
-          />
-        </filter>
-      </defs>
-    </svg>
 
     <script type="text/javascript" src="scripts/headerAnimation.js"></script>
     <p class="captions__text">
@@ -213,7 +214,7 @@
       </div>
       <div class="column">
         <a href="https://timessquare-walkthrough.vercel.app/"
-          ><img id="double__img" src="data/Axon_III.jpg"
+          ><img id="double__img" src="data/timessquare_screenshot.png"
         /></a>
       </div>
     </div>

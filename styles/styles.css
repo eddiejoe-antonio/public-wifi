@@ -9,11 +9,12 @@
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
-  /* background-image: linear-gradient(#333, lightblue); */
+  /* background-image: linear-gradient(#333, #999); */
   /* color: white; */
   /* background-image: linear-gradient(#a1bff0, white); */
-  /* background-image: linear-gradient(yellowgreen, white); */
-  background-color: white;
+  /* background-image: linear-gradient(#43A147, yellowgreen); */
+  /* background-color: #43A147; */
+  background-color: #f0f0f0;
   box-sizing: border-box;
   margin: 10vw;
   font-size: 1.25em;
@@ -26,6 +27,7 @@ body {
 a {
   text-decoration: none;
   transition: .5s;
+  color: black;
 }
 
 li {
@@ -90,16 +92,12 @@ img:hover {
 }
 
 .opening__shot img {
-  left: 0;
-  top: 0;
-  margin-left: -20vw;
-  margin-bottom: -10vw;
-  margin-top: -10vw;
+  margin-left: -10vw;
   width: 120vw;
   height: 80vh;
   object-fit: cover;
-  -webkit-animation: fadeInCover 7.5s;
-  animation: fadeInCover 7.5s;
+  -webkit-animation: fadeInCover 2.5s;
+  animation: fadeInCover 2.5s;
   opacity: 0.75;
 }
 
@@ -109,15 +107,15 @@ img:hover {
 
 a:visited {
     text-decoration: none;
-    color:initial;
+    color: black;
 }
 a:hover {
-  color: white;
+  color: blue;
   transition: .5s;
 }
 
 h1 {
-  color: #111;
+  color: #fff;
   margin-bottom: 10vw;
   position:relative;
   overflow-wrap: break-word;
@@ -203,21 +201,21 @@ hr {
 #container {
   display: block;
   position: absolute;
-  margin-left: 32vw;
+  margin-left: 25vw;
   margin-right: auto;
   width: 75%;
   margin-top: 0vh;
-  filter: url(#threshold) blur(0.6px);
+  filter: url(#threshold) blur(0.3px);
 }
 
 #text1,
 #text2 {
   /* text-transform: uppercase; */
-  color: #222;
+  color: #666;
   /* -webkit-text-stroke: 1px #fff; */
-  font-size: 11vw;
+  font-size: 10vw;
   position: fixed;
-  /* font-family: "vcr"; */
+  font-family: "vcr";
   display:inline;
   user-select: none;
 }
@@ -232,7 +230,7 @@ hr {
   justify-content:space-around;
   left: 0;
   top: 0;
-  background-color: white;
+  background-color: #f0f0f0;
   width: 100%;
   z-index: 1000;
   opacity: 0;
@@ -240,7 +238,15 @@ hr {
 }
   
 .nav-links a {
-    color: black;
+    color: #333;
+}
+
+.nav-links a:visited {
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: blue;
 }
   
   /* LOGO */
@@ -257,7 +263,7 @@ hr {
 }
   
 .menu li:hover {
-  background-color: #999;
+  color: blue;
   transition: 0.3s ease;
 }
   
@@ -377,8 +383,6 @@ input[type=checkbox]:checked ~ .menu {
     left: 0;
     top: 0;
     margin-left: -20vw;
-    margin-top: -25vh;
-    margin-bottom: 60vw;
     width: 140vw;
     height: 100vh;
     object-fit: contain;
@@ -424,12 +428,12 @@ input[type=checkbox]:checked ~ .menu {
   }
 
   #container {
-    margin-top: -120vh;
+    margin-top: 2.5vw;
   }
 
   #text1,
   #text2 {
-    font-size: 10vh;
+    font-size: 10vw;
     position: absolute;
     font-family: "vcr";
     width: 100%;
