@@ -383,6 +383,7 @@ input[type=checkbox]:checked ~ .menu {
     left: 0;
     top: 0;
     margin-left: -20vw;
+    margin-bottom: 1vw;
     width: 140vw;
     height: 100vh;
     object-fit: contain;
