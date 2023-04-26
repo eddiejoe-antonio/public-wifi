@@ -382,8 +382,9 @@ input[type=checkbox]:checked ~ .menu {
   .opening__shot img {
     left: 0;
     top: 0;
+    margin-top: -10vw;
     margin-left: -20vw;
-    margin-bottom: 1vw;
+    margin-bottom: -10vw;
     width: 140vw;
     height: 100vh;
     object-fit: contain;
