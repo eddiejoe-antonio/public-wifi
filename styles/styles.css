@@ -429,6 +429,7 @@ input[type=checkbox]:checked ~ .menu {
 
   #container {
     margin-top: 2.5vw;
+    margin-bottom: -10vw;
   }
 
   #text1,
