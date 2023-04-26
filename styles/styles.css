@@ -168,9 +168,8 @@ hr {
 }
 
 .takeaways {
-  margin-left: -7.5vw;
-  background-color: #dedede;
-  border: 5vw solid #dedede;
+    /* background-color: #dedede; */
+  /* border: 5vw solid #dedede; */
   line-height: 10vh; 
   font-size: 5vh;
 }
@@ -401,9 +400,6 @@ input[type=checkbox]:checked ~ .menu {
   }
 
   .takeaways {
-    margin-left: 0vw;
-    background-color: #dedede;
-    border: 5vw solid #dedede;
     line-height: 5vh; 
     font-size: 5vw;
   }
